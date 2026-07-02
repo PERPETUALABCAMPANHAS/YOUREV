@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live de Lançamento - You Rev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Tag picture para carregar a imagem mobile ou desktop dependendo do tamanho da tela -->
+        <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/bg-mobile.jpg">
+            <img src="assets/images/bg.jpg" alt="Live de Lançamento - You Rev" class="bg-image">
+        </picture>
+        
+        <!-- Botão sobreposto na imagem (Transparente com efeito hover) -->
+        <button id="openModalBtn" class="clickable-button" aria-label="Garantir minha vaga no grupo VIP">
+            <div class="hover-effect"></div>
+        </button>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="leadModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <div class="modal-header">
+                <h2>Garanta sua vaga!</h2>
+                <p>Preencha os dados abaixo para entrar no grupo VIP do WhatsApp.</p>
+            </div>
+            <form id="leadForm">
+                <div class="input-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="telefone">WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    ENTRAR NO GRUPO VIP
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
