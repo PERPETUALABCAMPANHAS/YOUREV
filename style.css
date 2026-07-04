@@ -34,11 +34,11 @@ body {
 */
 .clickable-button {
     position: absolute;
-    left: 56.5%;
-    top: 70%;
-    width: 37.5%;
-    height: 8.5%;
-    border-radius: 1vw;
+    left: 56.6%;
+    top: 70.3%;
+    width: 37.4%;
+    height: 8%;
+    border-radius: 4vw;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
@@ -197,11 +197,11 @@ body {
     }
     
     .clickable-button {
-        left: 10%;
-        width: 80%;
-        top: 82%;
-        height: 6%;
-        border-radius: 2vw; 
+        left: 4.5%;
+        width: 91%;
+        top: 84.5%;
+        height: 6.8%;
+        border-radius: 4vw; 
     }
     
     .modal-content {
